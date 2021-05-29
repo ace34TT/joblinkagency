@@ -1,0 +1,17 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "81.19.215.12",
+            "port": 3306,
+            "driver": "MariaDB",
+            "name": "joblinkagency",
+            "password": "40%YTPIfyg@8c8",
+            "username": "cscsmada",
+            "database": "joblinkagency"
+        }
+    ]
+}

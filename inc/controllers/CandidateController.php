@@ -1,0 +1,66 @@
+<?php
+
+require_once(dirname(__FILE__) . '/../models/Candidate.php');
+
+class CandidateController
+{
+    private $candidate;
+
+    public function __construct()
+    {
+        $this->candidate = new Candidate;
+    }
+
+    public function store($data, $file)
+    {
+        echo '<pre>', var_dump($file), '</pre>';
+        if ($this->file_checker($file) == "file can be uploaded") {
+            $this->store_file($file, $data[6]);
+            $this->candidate->_save($data);
+            $id = $this->candidate->getId($data[6]);
+            header('Location: index.php?action=registration_form&id = ' . $id);
+            return;
+        } else {
+            // header('Location: ' . $url . '&error=' . $this->file_checker($file));
+            return;
+        }
+    }
+
+    public function file_checker($file)
+    {
+        $target_dir = "assets/resumes/";
+        $target_file = $target_dir . basename($file["name"]);
+        $file_type = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
+        $status = "file can be uploaded";
+
+        // Check if file already exists
+        if (file_exists($target_file)) {
+            $status = "Sorry, file already exists.";
+        }
+
+        // Check file size
+        if ($file["size"] > 1000000) {
+            $status = "Sorry, your file is too large.";
+        }
+
+        // Allow certain file formats
+        if ($file_type != "pdf") {
+            $status = "Sorry, only PDF files are allowed.";
+        }
+
+        return $status;
+    }
+
+    private function store_file($file, $name)
+    {
+        $target_dir = "assets/resumes/";
+        $target_file = $target_dir . basename($file["name"]);
+        // Check if $uploadOk is set to 0 by an error
+
+        $target_file = $target_dir . $name . '.pdf';
+        if (move_uploaded_file($file["tmp_name"], $target_file)) {
+        } else {
+            echo "Sorry, there was an error uploading your file.";
+        }
+    }
+}
