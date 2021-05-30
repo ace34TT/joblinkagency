@@ -21,7 +21,7 @@
             ?>
                     <tr>
                         <th scope="row"><?= $candidate['id'] ?></th>
-                        <td> <a href="index.php?action=save&amp;candiate=<?= $candidate['id'] ?>"> <?= $candidate['fullname'] ?> </a></td>
+                        <td> <a href="index.php?action=candidate_card&amp;id=<?= $candidate['id'] ?>"> <?= $candidate['fullname'] ?> </a></td>
                         <td><?= $candidate['email'] ?></td>
                         <td><?= $candidate['region'] ?></td>
                         <td><a href="index.php?action=save_pending&amp;id=<?= $candidate['id'] ?>">Enregistrer</a></td>
