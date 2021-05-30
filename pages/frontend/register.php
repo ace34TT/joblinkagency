@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="assets/images/IMG-20210529-WA0000.jpg" rel="icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/registration.css">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -25,7 +26,7 @@
                     echo ('your id is ' . $id);
                 }
                 ?>
-                <input type="submit" onclick="window.location='index.php';" name="" value="Home" /><br />
+                <input type="submit" onclick="window.location='index.php';" name="" value="Accueil" /><br />
             </div>
             <div class="col-md-9 register-right">
                 <div class="tab-content" id="myTabContent">
