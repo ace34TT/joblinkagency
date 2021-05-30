@@ -63,4 +63,54 @@ class CandidateController
             echo "Sorry, there was an error uploading your file.";
         }
     }
+
+    public function getPendings()
+    {
+        return $this->candidate->getPending($_SESSION['admin']['recruiter_id']);
+    }
+
+    public function getPretests()
+    {
+        return $this->candidate->getPretest($_SESSION['admin']['recruiter_id']);
+    }
+
+    public function getFinalTests()
+    {
+        return $this->candidate->getFinalTest($_SESSION['admin']['recruiter_id']);
+    }
+
+    public function getPretestFails()
+    {
+        return $this->candidate->getPretestFail($_SESSION['admin']['recruiter_id']);
+    }
+
+    public function getFinalTestFails()
+    {
+        return $this->candidate->getFinalTestFail($_SESSION['admin']['recruiter_id']);
+    }
+
+    public function getReceived()
+    {
+        return $this->candidate->getReceived($_SESSION['admin']['recruiter_id']);
+    }
+
+    public function savePending($id)
+    {
+        $this->candidate->savePending($id);
+    }
+
+    public function getCandidate($id)
+    {
+        return $this->candidate->_id($id);
+    }
+
+    public function pretestSetResult($id, $result, $post, $recruiter_id)
+    {
+        $this->candidate->setPretestResult($id, $result, $post, $recruiter_id);
+    }
+
+    public function saveFinaltest($id)
+    {
+        $this->candidate->saveFinaltest($id);
+    }
 }

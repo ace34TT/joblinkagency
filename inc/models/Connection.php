@@ -64,7 +64,7 @@ class Connection
             $req->execute(array($id));
             $data = $this->fetch_resultSet($req);
             $req->closeCursor();
-            return $data;
+            return $data[0];
         } catch (Exception $e) {
             die('Erreur : ' . $e->getMessage());
         }

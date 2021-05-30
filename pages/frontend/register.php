@@ -31,7 +31,7 @@
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                         <h3 class="register-heading">Apply as a Employee</h3>
-                        <form action="index.php?action=registration_upload" method="post" enctype="multipart/form-data">
+                        <form action="index.php?action=registration_post" method="post" enctype="multipart/form-data">
                             <div class="row register-form">
 
                                 <div class="col-md-6">
@@ -97,9 +97,14 @@
                                     </div>
                                     <div class="form-group">
                                         <select class="form-control" name="destination">
-                                            <option selected>Etat</option>
-                                            <option value="canada">Canada </option>
-                                            <option value="maurice">Maurice </option>
+                                            <option selected>Pour</option>
+                                            <?php
+                                            foreach ($recruiters as $recruiter) {
+                                            ?>
+                                                <option value=" <?= $recruiter['id'] ?>"><?= $recruiter['name'] ?></option>
+                                            <?php
+                                            }
+                                            ?>
                                         </select>
                                     </div>
                                     <div class="form-group">
