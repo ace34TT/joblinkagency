@@ -84,7 +84,7 @@
                 <div class="carousel-item active" style="background-image: url(assets/images/slide/slide-1.jpg)">
                     <div class="carousel-container">
                         <div class="container">
-                            <h2 class="animate__animated animate__fadeInDown">Bienvenu sur <span>Job link agency</span></h2>
+                            <h2 class="animate__animated animate__fadeInDown">Bienvenu sur <span>Job link agency</span> MADAGASCAR</h2>
                             <!-- <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p> -->
                         </div>
                     </div>
@@ -146,12 +146,12 @@
             <div class="container">
 
                 <div class="section-title">
-                    <h2>VOUS LES CANDIDATS</h2>
+                    <h2>VOUS LES RECRUTEURS</h2>
                     <p>Êtes-vous à la recherche de travailleurs à Madagascar qu’à tous endroits dans le monde ? Êtes-vous à la recherche de travailleurs qualifiés originaires de Madagascar afin d’étoffer vos équipes ? Job Link Agency est entièrement à votre disposition. Coaching – Conseils – Assistance pour toutes les démarches en toute intégrité.</p>
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+                    <div class="col-lg-6 pt-4 pt-lg-0 order-1 order-lg-1 content">
                         <h3>Toutes les réponses sur</h3>
                         <!-- <p class="fst-italic">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -170,7 +170,7 @@
                             culpa qui officia deserunt mollit anim id est laborum
                         </p> -->
                     </div>
-                    <div class="col-lg-6 order-1 order-lg-2">
+                    <div class="col-lg-6 order-2 order-lg-2">
                         <img src="assets/images/pexels-magnetme-5839454.jpg" class="img-fluid" alt="">
                     </div>
                 </div>
@@ -190,10 +190,10 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-6 order-1 order-lg-2">
+                    <div class="col-lg-6 order-1 order-lg-1">
                         <img src="assets/images/pexels-rodolfo-quirós-2219024.jpg" class="img-fluid" alt="">
                     </div>
-                    <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+                    <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-2 content">
                         <h3> Nous sommes à vos côtés pour :</h3>
                         <!-- <p class="fst-italic">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -201,8 +201,8 @@
                         </p> -->
                         <ul>
                             <li><i class="bi bi-check-circled"></i> <span style="color: red;">&#8226;</span> &nbsp;&nbsp;&nbsp; La séléction de l’emploi qui convient à vos capacités.</li>
-                            <li><i class="bi bi-check-circled"></i> <span style="color: red;">&#8226;</span> &nbsp;&nbsp;&nbsp;L’organisation de votre entretien (interview) avec l’Entreprise recruteur.</li>
-                            <li><i class="bi bi-check-circled"></i> <span style="color: red;">&#8226;</span> &nbsp;&nbsp;&nbsp;L’analyse du Contrat de Travail avant que vous ne le signiez.</li>
+                            <li><i class="bi bi-check-circled"></i> <span style="color: red;">&#8226;</span> &nbsp;&nbsp;&nbsp; L’organisation de votre entretien (interview) avec l’Entreprise recruteur.</li>
+                            <li><i class="bi bi-check-circled"></i> <span style="color: red;">&#8226;</span> &nbsp;&nbsp;&nbsp; L’analyse du Contrat de Travail avant que vous ne le signiez.</li>
                             <li><i class="bi bi-check-circled"></i> <span style="color: red;">&#8226;</span> &nbsp;&nbsp;&nbsp; L’assistance dans toutes les démarches avant le départ (Visite médicale, obtention de passeport, papiers administratifs…)</li>
                             <li><i class="bi bi-check-circled"></i> <span style="color: red;">&#8226;</span> &nbsp;&nbsp;&nbsp; La garantie du lien entre vous et votre famille durant votre période d’adaptation. </li>
                         </ul>
@@ -331,7 +331,6 @@
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
     <!-- Template Main JS File -->
