@@ -158,11 +158,10 @@
                             magna aliqua.
                         </p> -->
                         <ul>
-                            <li><i class="bi bi-check-circled"></i><span style="color: red;">&#8226;</span> &nbsp;&nbsp;&nbsp; La séléction de l’emploi qui convient à vos capacités.</li>
-                            <li><i class="bi bi-check-circled"></i><span style="color: red;">&#8226;</span> &nbsp;&nbsp;&nbsp; L’organisation de votre entretien (interview) avec l’Entreprise recruteur.</li>
-                            <li><i class="bi bi-check-circled"></i> <span style="color: red;">&#8226;</span> &nbsp;&nbsp;&nbsp; L’analyse du Contrat de Travail avant que vous ne le signiez.</li>
-                            <li><i class="bi bi-check-circled"></i> <span style="color: red;">&#8226;</span> &nbsp;&nbsp;&nbsp; L’assistance dans toutes les démarches avant le départ (Visite médicale, obtention de passeport, papiers administratifs…)</li>
-                            <li><i class="bi bi-check-circled"></i> <span style="color: red;">&#8226;</span> &nbsp;&nbsp;&nbsp; La garantie du lien entre vous et votre famille durant votre période d’adaptation. </li>
+                            <li><i class="bi bi-check-circled"></i><span style="color: red;">&#8226;</span> &nbsp;&nbsp;&nbsp; Les lois en vigueur à Madagascar en ce domaine.</li>
+                            <li><i class="bi bi-check-circled"></i><span style="color: red;">&#8226;</span> &nbsp;&nbsp;&nbsp; La collecte et tri des Curriculum Vitae des candidats potentiels répondant à vos critères.</li>
+                            <li><i class="bi bi-check-circled"></i> <span style="color: red;">&#8226;</span> &nbsp;&nbsp;&nbsp; L’organisation des entretiens entre vous et ces candidats.</li>
+                            <li><i class="bi bi-check-circled"></i> <span style="color: red;">&#8226;</span> &nbsp;&nbsp;&nbsp; L’assistance aux candidats que vous ayez sélectionné pour les étapes à suivre : Visites Médicales, Obtention des passeports, papiers administratifs…) </li>
                         </ul>
                         <!-- <p>
                             Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
