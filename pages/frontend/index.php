@@ -258,7 +258,7 @@
                                 <h4>Email:</h4>
                                 <p>info@joblinkagency .com</p>
                             </div>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d396.5724985942311!2d47.49738625509774!3d-18.982023534409443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smg!4v1622375169096!5m2!1sen!2smg" width="100%" height="290" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d560.8381363817678!2d47.49698661650845!3d-18.98204420390824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21f079e796e56a2d%3A0xad73974d4dd2c4b0!2sJob%20link%20agency%20Madagascar!5e0!3m2!1sfr!2smg!4v1622444949953!5m2!1sfr!2smg" width="100%" height="290" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                         </div>
 
                     </div>
