@@ -10,8 +10,9 @@
             <tr>
                 <th scope="col">Id</th>
                 <th scope="col">Nom complet</th>
-                <th scope="col">Email</th>
                 <th scope="col">Téléphone</th>
+                <th scope="col">Email</th>
+
                 <th scope="col">Région</th>
             </tr>
         </thead>
@@ -24,8 +25,9 @@
                         <th scope="row"><?= $candidate['id'] ?></th>
                         <td> <a href="index.php?action=candidate_card&amp;id=<?= $candidate['id'] ?>"> <?= $candidate['fullname'] ?> </a></td>
                         <td><?= $candidate['email'] ?></td>
-                        <td><?= $candidate['region'] ?></td>
                         <td><?= $candidate['phone'] ?></td>
+                        <td><?= $candidate['region'] ?></td>
+
                         <td><a href="index.php?action=save_pending&amp;id=<?= $candidate['id'] ?>">Enregistrer</a></td>
                     </tr>
             <?php
