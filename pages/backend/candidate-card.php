@@ -1,22 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <link href="assets/images/IMG-20210529-WA0000.jpg" rel="icon">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Assets/Vendor/bootstrap/css/bootstrap.min.css">
-    <link href="Assets/Images/Logo.png" rel="icon">
-    <title>Informations- <?= $candidate['lastname'] . ' ' . $candidate['firstname']  ?> </title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
-    </style>
-</head>
-
-<body>
+    <?php $title = "Candidate card"; ?>
+    <?php ob_start(); ?>
     <div class="container-fluid ml-1 mr-1 mt-4 mb-4 shadow-lg border">
         <div class="row text-center">
             <h1 class="mt-4 mb-4 " style="font-family: 'Arvo', serif;font-family: 'Oswald', sans-serif;">Pretest form</h1>
@@ -88,6 +71,6 @@
             </div>
         </div>
     </div>
-</body>
+    <?php $content = ob_get_clean(); ?>
 
-</html>
+    <?php require('template.php'); ?>

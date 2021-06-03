@@ -76,7 +76,7 @@ class Connection
             $data = $this->fetch_resultSet($req);
             $req->closeCursor();
             $this->pdo->commit();
-            return $data;
+            return $data[0];
         } catch (Exception $e) {
             $this->pdo->rollback();
             die('Erreur : ' . $e->getMessage());
