@@ -39,8 +39,8 @@
                                 Resultats
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="index.php?action=pending_list">Non reçus préséléction</a></li>
-                                <li><a class="dropdown-item" href="index.php?action=pretest_list">Non reçus test final</a></li>
+                                <li><a class="dropdown-item" href="index.php?action=pretestfail_list">Non reçus préséléction</a></li>
+                                <li><a class="dropdown-item" href="index.php?action=finaltestfail_list">Non reçus test final</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
