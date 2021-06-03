@@ -10,7 +10,7 @@ class Connection
     public function init_connection($table, $fillable)
     {
         try {
-            $this->pdo = new PDO('mysql:host=81.19.215.12;dbname=cscsmada_v2;charset=utf8', 'cscsmada', '40%YTPIfyg@8c8');
+            $this->pdo = new PDO('mysql:host=81.19.215.12;dbname=joblinkagency;charset=utf8', 'cscsmada', '40%YTPIfyg@8c8');
             $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $this->table = $table;
             $this->fillable = $fillable;
