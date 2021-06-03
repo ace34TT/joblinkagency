@@ -17,11 +17,15 @@ class Comment extends Connection
     public function candidate_comments($candidate)
     {
         try {
+            $this->pdo->beginTransaction();
             $req = $this->pdo->prepare('SELECT * FROM comments WHERE candidate_id = ? ORDER BY created_at DESC');
             $req->execute(array($candidate));
+            $this->pdo->commit();
             return $this->fetch_resultSet($req);
         } catch (Exception $e) {
+            $this->pdo->rollback();
             die('Erreur : ' . $e->getMessage());
+            exit;
         }
         return null;
     }

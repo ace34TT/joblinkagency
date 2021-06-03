@@ -15,13 +15,17 @@ class Recruiter extends Connection
     public function getActiveRecruiter()
     {
         try {
+            $this->pdo->beginTransaction();
             $req = $this->pdo->query('SELECT *
                                     FROM recruiters
                                     ');
             $rows = $this->fetch_resultSet($req);
+            $this->pdo->commit();
             return $rows;
         } catch (Exception $e) {
+            $this->pdo->rollback();
             die('Erreur : ' . $e->getMessage());
+            exit;
         }
     }
 }
