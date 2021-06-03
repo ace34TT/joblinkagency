@@ -31,11 +31,11 @@ if (isset($_GET['action'])) {
     //Frontend 
     //apply
     if ($action == 'registration_form') {
-        if (isset($_GET['id'])) {
-            $id = $_GET['id'];
+        $error = '';
+        if (isset($_GET['error'])) {
+            $error = $_GET['error'];
         }
         $recruiters = $recruiterController->index();
-        // echo '<pre>', var_dump($recruiters), '</pre>';
         include('pages/frontend/register.php');
         return;
     }

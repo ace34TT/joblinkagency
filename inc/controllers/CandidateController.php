@@ -13,15 +13,21 @@ class CandidateController
 
     public function store($data, $file)
     {
-        echo '<pre>', var_dump($file), '</pre>';
+        foreach ($data as $field) {
+            if ($field == '' || $field == 'Région' || $field == 'pour') {
+                header('Location: index.php?action=registration_form&error=Please , fill properly all fields');
+                return;
+            }
+        }
         if ($this->file_checker($file) == "file can be uploaded") {
-            $this->store_file($file, $data[6]);
+
             $this->candidate->_save($data);
+            $this->store_file($file, $data[6]);
             $id = $this->candidate->getId($data[6]);
             header('Location: index.php?action=registration_form&id = ' . $id);
             return;
         } else {
-            // header('Location: ' . $url . '&error=' . $this->file_checker($file));
+            header('Location: index.php?action=registration_form&error=' . $this->file_checker($file));
             return;
         }
     }

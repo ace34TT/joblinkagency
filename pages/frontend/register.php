@@ -8,8 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/registration.css">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!------ Include the above in your HEAD tag ---------->
     <title>Registration</title>
 </head>
@@ -37,10 +35,11 @@
 
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="text" name="fullname" class="form-control" placeholder="Nom comptel *" value="" />
+                                        <label for="validationCustom01" hidden></label>
+                                        <input type="text" id="validationCustom01" require name="fullname" class="form-control" placeholder="Nom comptel *" value="" />
                                     </div>
                                     <div class="form-group">
-                                        <input type="date" name="dateOfBirth" class="form-control" placeholder="Date de naissance *" value="" />
+                                        <input type="date" require name="dateOfBirth" class="form-control" placeholder="Date de naissance *" value="" />
                                     </div>
                                     <div class="form-group pt-1 ml-2">
                                         <div class="">
@@ -55,13 +54,13 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <input type="number" name="height" step="0.01" class="form-control" placeholder="Taille *" value="" />
+                                        <input type="number" require name="height" step="0.01" class="form-control" placeholder="Taille *" value="" />
                                     </div>
                                     <div class="form-group">
-                                        <input type="number" name="weight" step="0.01" class="form-control" placeholder="Poids *" value="" />
+                                        <input type="number" require name="weight" step="0.01" class="form-control" placeholder="Poids *" value="" />
                                     </div>
                                     <div class="form-group">
-                                        <select class="form-control" name="region">
+                                        <select class="form-control" require name="region">
                                             <option class="hidden" selected disabled>Région</option>
                                             <option selected>Région</option>
                                             <option value="Analamanga">Analamanga </option>
@@ -91,13 +90,13 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="email" name="email" class="form-control" placeholder="Email *" value="" />
+                                        <input type="email" require name="email" class="form-control" placeholder="Email *" value="" />
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" name="phone" minlength="10" maxlength="10" class="form-control" placeholder="Téléphone *" value="" />
+                                        <input type="text" require name="phone" minlength="10" maxlength="10" class="form-control" placeholder="Téléphone *" value="" />
                                     </div>
                                     <div class="form-group">
-                                        <select class="form-control" name="destination">
+                                        <select class="form-control" require name="destination">
                                             <option selected>Pour</option>
                                             <?php
                                             foreach ($recruiters as $recruiter) {
@@ -109,22 +108,33 @@
                                         </select>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" name="post" class="form-control" placeholder="Post *" value="" />
+                                        <input type="text" require name="post" class="form-control" placeholder="Post *" value="" />
                                     </div>
                                     <div class="form-group">
-                                        <input type="file" name="resume" class="form-control" placeholder="Resume *" value="" />
+                                        <input type="file" require name="resume" class="form-control" placeholder="Resume *" value="" />
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 offset-1">
+                                            <p style="color: red">
+                                                <?php
+                                                if ($error != '') {
+                                                    echo $error;
+                                                }
+                                                ?>
+                                            </p>
+                                        </div>
                                     </div>
                                     <input type="submit" class="btnRegister" value="Postuler" />
                                 </div>
-
                             </div>
                         </form>
-
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
 
 </html>
