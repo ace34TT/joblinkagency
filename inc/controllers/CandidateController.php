@@ -19,18 +19,22 @@ class CandidateController
                 return;
             }
         }
-        if ($this->file_checker($file) == "file can be uploaded") {
-
+        if ($this->file_checker($file) == "file can be uploaded" && $this->candidate->getId($data[6]) == NULL) {
             $this->candidate->_save($data);
             $this->store_file($file, $data[6]);
             $id = $this->candidate->getId($data[6]);
             header('Location: index.php?action=registration_form&id = ' . $id);
             return;
         } else {
+            if ($this->candidate->getId($data[6]) == NULL) {
+                header('Location: index.php?action=registration_form&error=Email already used');
+                return;
+            }
             header('Location: index.php?action=registration_form&error=' . $this->file_checker($file));
             return;
         }
     }
+
 
     public function file_checker($file)
     {
