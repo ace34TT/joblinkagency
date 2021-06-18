@@ -197,4 +197,23 @@ class Candidate extends Connection
             exit;
         }
     }
+    function check_credentidal($email, $id)
+    {
+        try {
+            $this->pdo->beginTransaction();
+            $req = $this->pdo->prepare('SELECT * FROM candidates WHERE email = ? AND id = ?');
+            $req->execute(array($email, $id));
+            $row = $this->fetch_resultSet($req);
+            $this->pdo->commit();
+            if ($row != null) {
+                return true;
+            } else {
+                return false;
+            }
+        } catch (Exception $e) {
+            $this->pdo->rollback();
+            die('Erreur : ' . $e->getMessage());
+            exit;
+        }
+    }
 }

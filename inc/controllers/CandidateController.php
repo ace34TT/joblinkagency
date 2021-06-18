@@ -15,7 +15,7 @@ class CandidateController
     {
         foreach ($data as $field) {
             if ($field == '' || $field == 'Région' || $field == 'pour') {
-                header('Location: index.php?action=registration_form&error=Please , fill properly all fields');
+                header('Location: index.php?action=registration_form&error=SVP ,tâcher à bien remplir chaques champs');
                 return;
             }
         }
@@ -72,6 +72,28 @@ class CandidateController
         } else {
             echo "Sorry, there was an error uploading your file.";
         }
+    }
+
+    public function update_resume($email, $id, $resume)
+    {
+        $file_status = $this->file_checker($resume);
+        if ($this->check_candidate($email, $id) && file_exists("assets/resumes/" . $email . ".pdf")) {
+            if ($this->file_checker($resume) == "file can be uploaded") {
+                unlink("assets/resumes/" . $email . ".pdf");
+                $this->store_file($resume, $email);
+                header('Location: index.php?action=update_resume_form&message=Votre CV a été mis à jour');
+                return;
+            }
+            header('Location: index.php?action=update_resume_form&message=Le fichier que vous essayer d\'envoyer est invalide');
+            return;
+        }
+        header('Location: index.php?action=update_resume_form&message=Identifiants introuvable(s)');
+        return;
+    }
+
+    public function check_candidate($email, $id)
+    {
+        return $this->candidate->check_credentidal($email, $id);
     }
 
     public function getPendings()

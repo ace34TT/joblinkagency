@@ -13,13 +13,14 @@
     border: none;
     border-radius: 1.5rem;
     padding: 2%;
-    width: 60%;
+    width: 70%;
     background: #f8f9fa;
     font-weight: bold;
     color: #383d41;
-    margin-top: 30%;
+    margin-top: 20%;
     margin-bottom: 3%;
     cursor: pointer;
+    height: 50px;
 }
 
 .register-right {

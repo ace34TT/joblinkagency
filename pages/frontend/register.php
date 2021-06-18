@@ -24,7 +24,10 @@
                     echo ('your id is ' . $id);
                 }
                 ?>
-                <input type="submit" onclick="window.location='index.php';" name="" value="Accueil" /><br />
+                <input style="margin-top: 50%;" type="submit" onclick="window.location='index.php?action=update_resume_form';" name="" value="Mettre à jour mon CV" /><br />
+
+                <input style="margin-top: 30%;" type="submit" onclick="window.location='index.php';" name="" value="Accueil" /><br />
+
             </div>
             <div class="col-md-9 register-right">
                 <div class="tab-content" id="myTabContent">
@@ -32,7 +35,6 @@
                         <h3 class="register-heading">Informations personnelles</h3>
                         <form action="index.php?action=registration_post" method="post" enctype="multipart/form-data">
                             <div class="row register-form">
-
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="validationCustom01" hidden></label>
@@ -111,7 +113,7 @@
                                         <input type="text" require name="post" class="form-control" placeholder="Post *" value="" />
                                     </div>
                                     <div class="form-group">
-                                        <input type="file" require name="resume" class="form-control" placeholder="Resume *" value="" />
+                                        <input type="file" id="resume" require name="resume" class="form-control " placeholder="Resume *" value="" />
                                     </div>
                                     <div class="row">
                                         <div class="col-12 offset-1">

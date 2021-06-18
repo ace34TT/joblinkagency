@@ -57,6 +57,21 @@ if (isset($_GET['action'])) {
         $candidateController->store($data, $resume);
     }
 
+    if ($action == 'update_resume_form') {
+        $message = "";
+        if (isset($_GET['message'])) {
+            $message =  $_GET['message'];
+        }
+        include('pages/frontend/update-resume.php');
+    }
+
+    if ($action == "update_resume") {
+        $email = $_POST['email'];
+        $id = $_POST['id'];
+        $resume = $_FILES['resume'];
+        $candidateController->update_resume($email, $id, $resume);
+    }
+
     if ($action == 'admin_login_form') {
         if (isset($_SESSION['admin'])) {
             header('Location: index.php?action=admin_index');
