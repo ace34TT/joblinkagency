@@ -68,7 +68,10 @@
                     <li><a class="nav-link" href="index.php?action=admin_login_form">Se connecter</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
-            </nav><!-- .navbar -->
+            </nav>
+
+
+            <!-- .navbar -->
         </div>
     </header><!-- End Header -->
 
