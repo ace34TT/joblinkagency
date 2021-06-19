@@ -58,6 +58,12 @@
     <main>
         <?= $content ?>
     </main>
+
+    <?php
+    if (isset($scripts)) {
+        echo $scripts;
+    }
+    ?>
 </body>
 
 </html>
