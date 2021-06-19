@@ -145,4 +145,25 @@ class CandidateController
     {
         $this->candidate->saveFinaltest($id);
     }
+
+    public function send_message($email)
+    {
+        $headers  = 'MIME-Version: 1.0' . "\r\n";
+        $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+
+        // Create email headers
+        $from = $email['email'];
+        $headers .= 'From: ' . $from . "\r\n" .
+            'Reply-To: ' . $from . "\r\n" .
+            'X-Mailer: PHP/' . phpversion();
+
+        $to = "info@joblinkagency.com";
+        $subject = "Validation link";
+
+        $message = '<html><body>';
+        $message .= $email['message'];
+        $message .= '</body></html>';
+
+        mail($to, $subject, $message, $headers);
+    }
 }

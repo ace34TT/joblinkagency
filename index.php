@@ -244,6 +244,16 @@ if (isset($_GET['action'])) {
         session_destroy();
         header('Location: index.php');
     }
+
+    if ($action == "send_message") {
+        $email = array(
+            'name' => $_POST['name'],
+            'email' => $_POST['email'],
+            'subject' => $_POST['subject'],
+            'message' => $_POST['message']
+        );
+        header('Location: index.php');
+    }
 } else {
     include('pages/frontend/index.php');
     return;
