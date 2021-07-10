@@ -10,8 +10,9 @@
             <tr>
                 <th scope="col">Id</th>
                 <th scope="col">Nom complet</th>
-                <th scope="col">Email</th>
+                <th scope="col">Mail</th>
                 <th scope="col">Région</th>
+                <th scope="col">Poste</th>
             </tr>
         </thead>
         <tbody>
@@ -24,6 +25,7 @@
                         <td> <a href="index.php?action=pretest_form&amp;id=<?= $candidate['id'] ?>"> <?= $candidate['fullname'] ?> </a></td>
                         <td><?= $candidate['email'] ?></td>
                         <td><?= $candidate['region'] ?></td>
+                        <td><?= $candidate['post'] ?></td>
                     </tr>
             <?php
                 }

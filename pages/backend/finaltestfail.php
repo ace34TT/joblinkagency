@@ -12,6 +12,7 @@
                 <th scope="col">Nom complet</th>
                 <th scope="col">Email</th>
                 <th scope="col">Région</th>
+                <th scope="col">Poste</th>
             </tr>
         </thead>
         <tbody>
@@ -24,6 +25,7 @@
                         <td> <a href="index.php?action=candidate_card&amp;id=<?= $candidate['id'] ?>"> <?= $candidate['fullname'] ?> </a></td>
                         <td><?= $candidate['email'] ?></td>
                         <td><?= $candidate['region'] ?></td>
+                        <td><?= $candidate['poste'] ?></td>
                         <td><a href="index.php?action=save_finaltestfail&amp;id=<?= $candidate['id'] ?>">Enregistrer</a></td>
                     </tr>
             <?php

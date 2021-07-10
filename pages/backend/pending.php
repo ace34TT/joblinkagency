@@ -29,6 +29,7 @@
                 <th scope="col">Email</th>
                 <th scope="col">Téléphone</th>
                 <th scope="col">Region</th>
+                <th scope="col">Poste</th>
                 <th scope="col"></th>
             </thead>
             <tbody>
@@ -42,6 +43,7 @@
                             <td><?= $candidate['email'] ?></td>
                             <td><?= $candidate['phone'] ?></td>
                             <td><?= $candidate['region'] ?></td>
+                            <td><?= $candidate['post'] ?></td>
                             <td><a href="index.php?action=save_pending&amp;id=<?= $candidate['id'] ?>">Enregistrer</a></td>
                         </tr>
                 <?php

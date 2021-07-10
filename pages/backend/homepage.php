@@ -46,8 +46,8 @@
                     <h5 class="card-title">Test final</h5>
                     <p class="card-text">
                         <?php
-                        if (isset($finalttest)) {
-                            echo (count($finalttest));
+                        if (isset($finaltest)) {
+                            echo (count($finaltest));
                         } else {
                             echo (0);
                         }
